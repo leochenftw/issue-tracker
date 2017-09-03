@@ -1,0 +1,82 @@
+---
+Name: mainsite
+After: 'framework/*','cms/*'
+---
+# YAML configuration for SilverStripe
+# See http://doc.silverstripe.org/framework/en/topics/configuration
+# Caution: Indentation through two spaces, not tabs
+Email:
+  admin_email: 'WikiFlow <leo@leochen.co.nz>'
+  noreply_email: 'WikiFlow <no-reply@leochen.co.nz>'
+SiteVersion:
+  version: 1.0
+SSViewer:
+  theme: 'default'
+Image:
+  extensions:
+    - ImageExt
+Page:
+  extensions:
+    - OpenGraphExtension
+    - TwitterCardExtension
+    - SeoObjectExtension
+    - SEOExtension
+SiteConfig:
+  extensions:
+    - CustomSiteConfig
+    - OpenGraphExtension
+    - TwitterCardExtension
+Page_Controller:
+  extensions:
+    - PageControllerDecorator
+ModelAdmin:
+  extensions:
+    - ModelAdminExtension
+Member:
+  extensions:
+    - MemberExtension
+    - ContactExtension
+  default_groups:
+    - "Developers"
+    - "Project Managers"
+    - "Customers"
+SeoConfig:
+    Page: true
+    ErrorPage: false
+    RedirectorPage: false
+    VirtualPage: false
+Issue:
+  OS:
+    "osx": "OSX (Mac)"
+    "windows": "Windows (PC)"
+    "ios": "iOS (iPhone or iPad)"
+    "android": "Android (Sumsung Galaxy, Nexus...)"
+    "wp": "Windows Phone"
+  priorities:
+    "0": "Low"
+    "1": "Medium"
+    "2": "High"
+IssueType:
+  default_types:
+    - "Change request"
+    - "Bug"
+IssueStatus:
+  default_status:
+    - "Open"
+    - "In progress"
+    - "In review"
+    - "Done"
+    - "Closed"
+    - "Rejected"
+    - "Duplicated"
+    - "In approval"
+    - "Approved"
+Server:
+  extensions:
+    - CeasedExtension
+ClientPage:
+  extensions:
+    - CeasedExtension
+ProjectPage:
+  extensions:
+    - CeasedExtension

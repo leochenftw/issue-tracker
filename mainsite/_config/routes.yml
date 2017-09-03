@@ -1,0 +1,13 @@
+---
+Name: apiroutes
+After: framework/routes#coreroutes
+---
+Director:
+  rules:
+    # 'signup': 'Signup'
+    # 'signin': 'Signin'
+    'api/v/1/task': 'TaskAPI'
+    'api/v/1/report/$Date!': 'ReportAPI'
+    'api/v/1/calendar/$year/$month/$date': 'CalendarAPI'
+    'api/v/1/tick-tock/$TaskID!/$FragmentID': 'TimeFragmentAPI'
+    'calendar': 'CalendarController'

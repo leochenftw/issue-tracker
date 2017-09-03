@@ -1,0 +1,23 @@
+.single-day-report.modal {
+    .task {
+        &-badge {
+            color: white;
+            background: #3273dc;
+            padding: 0px 8px 2px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        &-title {
+
+        }
+    }
+
+    .modal-card-foot {
+        @include justify-content(flex-end);
+        .time-summary {
+            font-size: 24px;
+            font-weight: bold;
+        }
+    }
+}

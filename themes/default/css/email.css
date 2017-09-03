@@ -1,0 +1,370 @@
+.orange {
+  background-color: #ea6d23;
+  color: white;
+}
+
+.purple {
+  background-color: #2a2a3b;
+  color: white;
+}
+
+.white {
+  background-color: white;
+  color: #2a2a3b;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+body, table, td, p, a, li, blockquote {
+  -webkit-text-size-adjust: none !important;
+  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+}
+
+table, p, ul, li, blockquote {
+  margin-top: 0;
+  font-size: 16px !important;
+}
+
+h2, h3, h4, h5, h6 {
+  margin: 40px 0 16px !important;
+  color: #ea6d23 !important;
+  text-transform: uppercase;
+  font-size: normal !important;
+}
+
+h2 {
+  font-size: 32px !important;
+  padding-bottom: 5px;
+}
+
+h3 {
+  font-size: 24px !important;
+}
+
+h4 {
+  font-size: 20px !important;
+}
+
+h5 {
+  font-size: 18px !important;
+}
+
+h6 {
+  font-size: 16px !important;
+}
+
+a, a:link, a:visited {
+  color: #3273dc !important;
+}
+
+img,
+.is-block {
+  display: block;
+}
+
+.is-inline,
+.is-inline img {
+  display: inline;
+}
+
+img.is-inline {
+  display: inline;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a img {
+  border: none;
+  outline: none;
+}
+
+.has-text-left {
+  text-align: left;
+}
+
+.has-text-centered {
+  text-align: center;
+}
+
+.has-text-right {
+  text-align: right;
+}
+
+td.reported-by {
+  padding: 12px 0;
+}
+
+.is-marginless {
+  margin: 0 !important;
+}
+
+td.is-1 {
+  order: 1;
+  width: 10%;
+}
+td.is-2 {
+  order: 2;
+  width: 20%;
+}
+td.is-3 {
+  order: 3;
+  width: 30%;
+}
+td.is-4 {
+  order: 4;
+  width: 40%;
+}
+td.is-5 {
+  order: 5;
+  width: 50%;
+}
+td.is-6 {
+  order: 6;
+  width: 60%;
+}
+td.is-7 {
+  order: 7;
+  width: 70%;
+}
+td.is-8 {
+  order: 8;
+  width: 80%;
+}
+td.is-9 {
+  order: 9;
+  width: 90%;
+}
+td.is-10 {
+  order: 10;
+  width: 100%;
+}
+td.is-11 {
+  order: 11;
+  width: 110%;
+}
+td.is-12 {
+  order: 12;
+  width: 120%;
+}
+
+span.task-badge {
+  color: white;
+  background: #3273dc;
+  padding: 0px 8px 2px;
+  border-radius: 5px;
+  margin-right: 0.5em;
+  display: inline-block;
+}
+
+/*** start from here ***/
+table.ancestor-table, table.super-ancestor-table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+table.ancestor-table td.main-container, table.super-ancestor-table td.main-container {
+  text-align: center;
+}
+
+table.alpha-center-table {
+  width: 600px;
+  margin: 0 auto;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+table.alpha-center-table td {
+  border: none;
+}
+
+table.alpha-center-table td.content {
+  padding: 10px 10px 60px;
+}
+
+table.alpha-center-table td.content em {
+  font-weight: bold;
+  color: #ea6d23;
+}
+
+table.alpha-center-table td.content ul {
+  padding-left: 0.5em;
+  margin-bottom: 2em !important;
+}
+
+table.alpha-center-table td.content ul li {
+  margin-bottom: 0.75em !important;
+  color: #66635F;
+}
+
+table.alpha-center-table td.content ul li strong {
+  color: #2a2a3b;
+}
+
+@media screen and (max-width: 599px) {
+  table.alpha-center-table td.content ul {
+    padding-left: 24px !important;
+  }
+}
+@media screen and (max-width: 480px) {
+  table.alpha-center-table td.content ul {
+    padding-left: 24px !important;
+  }
+}
+@media screen and (max-width: 417px) {
+  table.alpha-center-table td.content ul {
+    padding-left: 24px !important;
+  }
+}
+table.alpha-center-table td.content p {
+  color: #66635F;
+  line-height: 1.6;
+  margin-bottom: 6px;
+}
+
+table.alpha-center-table td.content p strong {
+  color: #ea6d23;
+}
+
+table.alpha-center-table td.content p strong.is-black {
+  color: #2a2a3b;
+}
+
+table.alpha-center-table td.content p.is-large {
+  font-size: 24px !important;
+  color: #2a2a3b;
+  line-height: 1.4;
+}
+
+table.alpha-center-table td.content .button,
+table.alpha-center-table td.content a.button,
+table.alpha-center-table td.content a.button:link,
+table.alpha-center-table td.content a.button:visited {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 1rem;
+  height: 2.25em;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  line-height: 1.5;
+  padding-bottom: calc(0.375em - 1px);
+  padding-left: calc(0.625em - 1px);
+  padding-right: calc(0.625em - 1px);
+  padding-top: calc(0.375em - 1px);
+  position: relative;
+  vertical-align: top;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: white;
+  border-color: #dbdbdb;
+  color: #363636;
+  cursor: pointer;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  text-align: center;
+  white-space: nowrap;
+  background-color: #3273dc;
+  height: auto !important;
+  border-color: transparent;
+  color: white !important;
+  text-decoration: none !important;
+}
+
+table.alpha-center-table.closure .col-left, table.alpha-center-table.closure .col-right {
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+
+table.full-width {
+  width: 100% !important;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+table.auto-width {
+  width: auto;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+table .top-stripe {
+  background-color: #ede8df;
+}
+
+table .top-stripe table td {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+table .top-stripe table td.col-left,
+table .top-stripe table td.col-right {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+table tr.align-vertical-top td {
+  vertical-align: top;
+}
+
+table tr.align-vertical-center td {
+  vertical-align: middle;
+}
+
+table tr.align-vertical-bottom td {
+  vertical-align: bottom;
+}
+
+body {
+  background-color: #f7f5e8;
+}
+
+/*** modifiers **/
+@media screen and (max-width: 599px) {
+  /*styling for objects with screen size less than 600px; */
+  body, table, td, p, a, li, blockquote {
+    -webkit-text-size-adjust: none !important;
+    font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important;
+  }
+
+  *, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  table {
+    /* All tables are 100% width */
+    width: 100%;
+    border-style: none !important;
+  }
+
+  table.alpha-center-table {
+    width: 100% !important;
+    max-width: 600px !important;
+  }
+}
+
+/*# sourceMappingURL=email.css.map */

@@ -1,0 +1,118 @@
+.clndr {
+    &-controls {
+        border-bottom: 1px solid $grey-lighter;
+        &-button {
+            cursor: pointer;
+        }
+    }
+
+    .clndr-grid {
+        .day {
+            &s {
+                border-bottom: 1px solid $grey-lighter;
+            }
+            @include flex(none);
+            cursor: pointer;
+            width: 14.28571428571429%;
+            height: 0;
+            padding-top: 0;
+            padding-bottom: 14.28571428571429%;
+            border: 1px solid $grey-lighter;
+            border-right: none;
+            border-bottom: none;
+            background-color: rgba($grey-lighter, 0);
+            @include transition(all 0.3s);
+            overflow: hidden;
+            &.today,
+            &:hover {
+                background-color: rgba($grey-lighter, 1);
+            }
+
+            &.today {
+                border-color: white;
+            }
+
+            &.calendar-dow-0 {
+                border-right: 1px solid $grey-lighter;
+            }
+
+            &-num {
+                padding-top: 12px;
+                margin-bottom: 6px;
+                padding-left: 0.75em;
+            }
+
+            .day-events {
+                .task {
+                    margin: 0.25em 0;
+                    @include align-items(center);
+                    display: none;
+                    &.has-more {
+                        padding: 0.25em 0.5em 0.4em;
+                        margin-top: 0.75em;
+                        border-top: 1px solid $grey-lighter;
+                        @include display-flex;
+                    }
+
+                    @include mobile {
+                        &:nth-child(1) {
+                            @include display-flex;
+                        }
+                    }
+
+                    @include tablet-only {
+                        &:nth-child(1),
+                        &:nth-child(2) {
+                            @include display-flex;
+                        }
+                    }
+
+                    @include desktop-only {
+                        &:nth-child(1),
+                        &:nth-child(2),
+                        &:nth-child(3) {
+                            @include display-flex;
+                        }
+                    }
+
+                    @include widescreen-only {
+                        &:nth-child(1),
+                        &:nth-child(2),
+                        &:nth-child(3),
+                        &:nth-child(4) {
+                            @include display-flex;
+                        }
+                    }
+
+                    @include fullhd {
+                        @include display-flex;
+                    }
+
+                    .column {
+                        padding-left: 0;
+                        padding-top: 0;
+                        padding-bottom: 0;
+                        line-height: 1;
+                        font-size: 12px;
+                    }
+                    .client-code {
+                        display: block;
+                        padding: 0.25em 0.5em;
+                        background-color: $info;
+                        color: white;
+                        border-radius: 2px;
+                    }
+
+                    &-title {
+                        padding-right: 0;
+                        line-height: 1.4 !important;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+                }
+            }
+
+        }
+    }
+}

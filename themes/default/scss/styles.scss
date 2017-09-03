@@ -1,0 +1,58 @@
+// /**
+//  * @file styles.scss
+//  *
+//  * Main stylesheet.
+//  * */
+@import 'compass';
+
+@import "font-awesome-compass";
+@import "font-awesome";
+
+@import 'config/colours';
+
+@import "bulma/bulma";
+
+@import 'config/ss-shim',
+        'config/sprite';
+
+// @include retina-sprite-add(spritesheet, 'sprites/*.png', 'retina_sprites/*.png');
+
+@import 'blocks/bulification',
+        'blocks/ui-tracking',
+        'blocks/ui-calendar',
+        'blocks/_ui-single-day-report';
+
+
+html {
+    font-size: 16px;
+    body {
+        font-size: 16px;
+        &.blurred {
+            &:after {
+                content: '';
+                position: fixed;
+                z-index: 9998;
+                background-color: rgba(white, 0.8);
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+            }
+
+            &.bg {
+                &-black {
+                    &:after {
+                        background-color: rgba(black, 0.8);
+                    }
+                }
+            }
+
+            #header, #main, #footer {
+                -webkit-filter: blur(5px);
+                filter: blur(5px);
+                @include user-select(none);
+                pointer-events: none;
+            }
+        }
+    }
+}
